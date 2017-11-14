@@ -30,10 +30,13 @@ _Confidence_
 
 ## Fundamental Principles
 
-  - Priorities
-      - Stability > Performance > Coverage
-  - Measuring health
-      - Signal : Noise
+Stability > Performance > Coverage
+
+---
+
+## Fundamental Principles
+
+Signal : Noise
 
 ---
 
