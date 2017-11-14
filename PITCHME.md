@@ -28,15 +28,15 @@ _Confidence_
 
 ---
 
-## Fundamental Principles
+#### Fundamental Principles
 
-Stability > Performance > Coverage
+## Stability > Performance > Coverage
 
 ---
 
-## Fundamental Principles
+#### Fundamental Principles
 
-Signal : Noise
+## Signal : Noise
 
 ---
 
