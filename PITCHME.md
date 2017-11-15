@@ -15,7 +15,7 @@ _Properly built and maintained test automation helps you to change with confiden
 
 ## Context: Test Pyramid
 
-*Image of test pyramid*
+![Image of test pyramid](http://blog.primehammer.com/wp-content/uploads/2017/02/image02-300x259.png
 
 _Layers_
 _Isolation_
