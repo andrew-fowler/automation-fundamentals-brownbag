@@ -109,9 +109,13 @@ Q: What about BDD/Tools?
 ---
 ## Common pitfalls
   - Degradation
+    - Quarantine process
   - Silo’d ownership
+    - Documentation and education
   - Over reliance
+    - Mature and transparent test approach
   - Over engineering
+    - KISS, YAGNI
 
 ---
 ## Webdriver Overview
