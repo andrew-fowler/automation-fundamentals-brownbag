@@ -84,7 +84,7 @@ High performance but poor stability results in tests that aren't ran as they're 
 
 In a nutshell: It's better to have one stable and performant test, than many tests that are slow and / or unstable.
 
-Anti-pattern: Lloyds maximising test counts/coverage.
+Anti-pattern: Maximising test counts/coverage, e.g. in migration projects.
 ---
 
 #### Fundamental Principles : Measuring health
