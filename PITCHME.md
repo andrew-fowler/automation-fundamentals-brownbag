@@ -4,22 +4,24 @@
 ---
 
 ## What is it?
-_Automated checking that things that were previously known to be true, still are._
+_Automated checking that things that were previously known to be true still are._
 
 Note:
-As opposed to testing, which looks to surface new information.
+As opposed to _testing_ activities, which look to surface new information about the system.
 ---
 
 ## What is it for?
-_A low execution-cost way to learn information about the health of the build_
+_A low execution-cost way to gather information about the current health of the build_
 
 Note:
 
 ---
 
-## Why do it?
+## Why would we do it?
 _Properly built and maintained test automation helps you to change with confidence, and so change at speed._
 
+Note:
+All test automation aims to enable change with confidence and speed.  At a system level, we're primarily aiming to cover regression risks introduced to the wider system (specifically at the user/consumer interface) by changes in its subcomponents.
 ---
 
 ## Context: Test Pyramid
@@ -27,34 +29,57 @@ _Properly built and maintained test automation helps you to change with confiden
 ![Image of test pyramid](http://blog.primehammer.com/wp-content/uploads/2017/02/image02-300x259.png)
 
 Note:
-The test pyramid is a model often used to describe different things.
-The most useful way to think of it is to see it as illustrating dimensions of isolation, and confidence.
-Isolation is proportional to determinism and speed of execution.
-Isolation is inversely proportional to system confidence.
-
-  - Integration testing in the large/small
-  - How it relates to API testing
-  - Q: What’s the difference between system and acceptance testing?
+ - The test pyramid is a model often used/abused to describe very different things roughly related to testing.
+ - The most useful way to think of it is to see it as illustrating the competing dimensions of isolation and system-confidence.
+ - Isolation (in the code under test) is proportional to system (and therefore test) determinism and the speed of execution.
+ - However, isolation is _inversely_ proportional to the system confidence provided by the resulting information.
+ - Touch on vocab: Integration testing in the large/small
+ - Q: How does this relate to API testing?
+ - Q: What’s the difference between system and acceptance testing?
 
 ---
 
-#### Fundamental Principles
+#### Fundamental Principles: Implementation priorities
 
 ## Stability > Performance > Coverage
 
 Note:
-High coverage but poor performance results in tests that aren't ran as there's too much time friction.
-High performance but poor stability results in tests that aren't ran as they're too expensive to extract information from.
+- High coverage but poor performance results in tests that aren't ran as they take too long.
+- High performance but poor stability results in tests that aren't ran as they're too expensive to extract information from.
 
-It's better to have one stable and performant test that many tests that are slow and / or unstable.
+In a nutshell: It's better to have one stable and performant test, than many tests that are slow and / or unstable.
 ---
 
-#### Fundamental Principles
+#### Fundamental Principles : Measuring health
 
 ## Signal : Noise
 
----
+Note: 
+- Anti-pattern: Test counts, Pass/Fail counts
+- There is only one relevant measure of health in an STA effort.  Signal:Noise.
+- What % of test results accurately gave the information they intended to
+- Difficult to measure - a manual/qualitative activity
+- But worth doing
+- Goal should be S:N of 99%+
 
+---
+## Workflow
+  - Capturing scenarios
+  - Building the abstraction
+  - Proving code
+  - Proving compatibility
+  - Proving stability
+  - Local execution vs Remote execution
+
+Q: How to you increase/improve stability?
+Q: How to you increase/improve performance?
+Q: How to you increase/improve coverage?
+---
+# THE END
+
+### Content that follows is to help with common questions
+
+---
 ## Design pattern/s
 
   - Basic 3 layer
@@ -65,17 +90,6 @@ It's better to have one stable and performant test that many tests that are slow
   - Q: What about BDD/Tools?
 
 ---
-
-## Workflow
-  - Capturing scenarios
-  - Building the abstraction
-  - Proving code
-  - Proving compatibility
-  - Proving stability
-  - Local execution vs Remote execution
-
----
-
 ## Common pitfalls
   - Degradation
   - Silo’d ownership
