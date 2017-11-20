@@ -39,11 +39,36 @@ Isolation (in the code under test) is proportional to system (and therefore test
 
 However, isolation is _inversely_ proportional to the system confidence provided by the resulting information.
 
-Touch on vocab: Integration testing in the large/small
+Touch on: Vocab: Integration testing in the large/small
 
 Q: How does this relate to API testing?
 
 Q: What’s the difference between system and acceptance testing?
+
+---
+## What tests should be written?
+
+Note:
+As few as possible _to cover the risks we care about_
+
+Write tests at the lowest possible point in the pyramid
+
+E.g. Checking a validation message appears is a UI unit test.
+
+Checking that the post-validation transition occurs is likely a system test.
+
+Anti-pattern: _Test all the things!_
+---
+## When should we write system tests?
+
+When the interface is stable.
+
+When supporting test strata are in place.
+
+Note:
+UI churn is common early in development and should be taken into account when considering when to write tests.
+
+Anti-pattern: Ice cream cone
 
 ---
 
@@ -58,6 +83,8 @@ High coverage but poor performance results in tests that aren't ran as they take
 High performance but poor stability results in tests that aren't ran as they're too expensive to extract information from.
 
 In a nutshell: It's better to have one stable and performant test, than many tests that are slow and / or unstable.
+
+Anti-pattern: Lloyds maximising test counts/coverage.
 ---
 
 #### Fundamental Principles : Measuring health
