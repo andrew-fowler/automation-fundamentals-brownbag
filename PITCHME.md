@@ -8,6 +8,10 @@ _Automated checking that things that were previously known to be true still are.
 
 Note:
 As opposed to _testing_ activities, which look to surface new information about the system.
+
+A replacement for manual regression checking. 
+
+_Not_ a replacement for integration or unit tests.
 ---
 
 ## What is it for?
@@ -29,6 +33,8 @@ At a system level, we're primarily aiming to cover regression risks introduced t
 ## Context: Test Pyramid
 
 ![Image of test pyramid](http://blog.primehammer.com/wp-content/uploads/2017/02/image02-300x259.png)
+
+_NOTE TO SELF: Need to find/create a better diagram_
 
 Note:
 The test pyramid is a model often used/abused to describe very different things roughly related to testing.
