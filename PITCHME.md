@@ -11,7 +11,7 @@ As opposed to _testing_ activities, which look to surface new information about 
 ---
 
 ## What is it for?
-_A low execution-cost way to gather information about the current health of the build_
+_A low execution-cost way to gather information about the current health of the build, from a users perspective_
 
 Note:
 
