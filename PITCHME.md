@@ -73,7 +73,7 @@ UI churn is common early in development and should be taken into account when co
 
 #### Fundamental Principles: Implementation priorities
 
-## Stability > Performance > Coverage
+### Stability > Performance > Coverage
 
 Note:
 
