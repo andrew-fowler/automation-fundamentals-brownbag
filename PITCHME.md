@@ -6,13 +6,13 @@
 ## What is it?
 
 Note:
-Automated checking that things that were previously known to be true still are.
+Automated checking that things that were **previously known to be true still are**.
 
-As opposed to _testing_ activities, which look to surface new information about the system.
+**As opposed to _testing_ activities**, which look to surface new information about the system.
 
-A replacement for manual regression checking. 
+A replacement for **manual regression checking**. 
 
-_Not_ a replacement for integration or unit tests.
+_Not_ a replacement for **integration or unit tests**.
 ---
 
 ## Why would we do it?
@@ -20,11 +20,9 @@ _Not_ a replacement for integration or unit tests.
 Note:
 A low execution-cost way to gather information about the current health of the build, from a users perspective
 
-Properly built and maintained test automation helps you to change with confidence, and so change at speed.
+All test automation aims to enable **change with confidence and speed**.  
 
-All test automation aims to enable change with confidence and speed.  
-
-At a system level, we're primarily aiming to cover regression risks introduced to the wider system (specifically at the user/consumer interface) by changes in its subcomponents.
+At a system level, we're primarily aiming to cover **regression risks** introduced to the wider system (specifically at the user/consumer interface) by **changes in its subcomponents**.
 ---
 ## Context: Test Pyramid
 
@@ -34,11 +32,11 @@ At a system level, we're primarily aiming to cover regression risks introduced t
 Note:
 The test pyramid is a model often used/abused to describe very different things roughly related to testing.
 
-The most useful way to think of it is to see it as illustrating the competing dimensions of isolation and system-confidence.
+The most useful way to think of it is to see it as illustrating the **competing dimensions of isolation and system-confidence**.
 
-Isolation (in the code under test) is proportional to system (and therefore test) determinism and the speed of execution.
+Isolation (in the code under test) is **proportional** to system (and therefore test) **determinism** and the **speed** of execution.
 
-However, isolation is _inversely_ proportional to the system confidence provided by the resulting information.
+However, isolation is **_inversely_ proportional** to the **system confidence** provided by the resulting information.
 
 Touch on: Vocab: Integration testing in the large/small
 
@@ -52,24 +50,24 @@ Q: What’s the difference between system and acceptance testing?
 Note:
 As few as possible _to cover the risks we care about_
 
-Write tests at the lowest possible point in the pyramid
+Write tests at the **lowest possible point** in the pyramid
 
 E.g. Checking a validation message appears is a UI unit test.
 
 Checking that the post-validation transition occurs is likely a system test.
 
 Anti-pattern: _Test all the things!_
+
+Anti-pattern: _Ice cream cone_
 ---
 ## When should we write system tests?
 
+Note:
 When the interface is stable.
 
 When supporting test strata are in place.
 
-Note:
 UI churn is common early in development and should be taken into account when considering when to write tests.
-
-Anti-pattern: Ice cream cone
 
 ---
 
