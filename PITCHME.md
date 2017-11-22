@@ -31,7 +31,7 @@ At a system level, we're primarily aiming to cover regression risks introduced t
 ---
 
 ---
----?image=assets/vanjacobson.png&size=auto
+---?image=assets/pyramid.png&size=auto
 ---
 ## Context: Test Pyramid
 
