@@ -71,9 +71,9 @@ UI churn is common early in development and should be taken into account when co
 
 ---
 
-#### Fundamental Principles: Implementation priorities
+##### Fundamental Principles: Implementation priorities
 
-### Stability > Performance > Coverage
+#### Stability > Performance > Coverage
 
 Note:
 
@@ -86,7 +86,7 @@ In a nutshell: It's better to have one stable and performant test, than many tes
 Anti-pattern: Maximising test counts/coverage, e.g. in migration projects.
 ---
 
-#### Fundamental Principles : Measuring health
+##### Fundamental Principles : Measuring health
 
 ## Signal : Noise
 
