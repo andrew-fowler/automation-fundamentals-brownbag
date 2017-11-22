@@ -4,9 +4,10 @@
 ---
 
 ## What is it?
-_Automated checking that things that were previously known to be true still are._
 
 Note:
+Automated checking that things that were previously known to be true still are.
+
 As opposed to _testing_ activities, which look to surface new information about the system.
 
 A replacement for manual regression checking. 
@@ -14,17 +15,13 @@ A replacement for manual regression checking.
 _Not_ a replacement for integration or unit tests.
 ---
 
-## What is it for?
-_A low execution-cost way to gather information about the current health of the build, from a users perspective_
-
-Note:
-
----
-
 ## Why would we do it?
-_Properly built and maintained test automation helps you to change with confidence, and so change at speed._
 
 Note:
+A low execution-cost way to gather information about the current health of the build, from a users perspective
+
+Properly built and maintained test automation helps you to change with confidence, and so change at speed.
+
 All test automation aims to enable change with confidence and speed.  
 
 At a system level, we're primarily aiming to cover regression risks introduced to the wider system (specifically at the user/consumer interface) by changes in its subcomponents.
