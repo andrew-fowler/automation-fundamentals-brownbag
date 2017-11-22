@@ -8,17 +8,18 @@
 Note:
 Automated checking that things that were **previously known to be true still are**.
 
-**As opposed to _testing_ activities**, which look to surface new information about the system.
-
 A replacement for **manual regression checking**. 
 
 _Not_ a replacement for **integration or unit tests**.
+
+**As opposed to _testing_ activities**, which look to surface new information about the system.
+
 ---
 
 ## Why would we do it?
 
 Note:
-A low execution-cost way to gather information about the current health of the build, from a users perspective
+Fast feedback.  The greater the age of a bug, the more impactful and more expensive it is to fix.
 
 All test automation aims to enable **change with confidence and speed**.  
 
@@ -105,22 +106,54 @@ Goal should be S:N of 99%+
 
 ---
 ## Workflow
-  - Capturing scenarios
-  - Building the abstraction
-  - Proving code
-  - Proving compatibility
-  - Proving stability
-  - Local execution vs Remote execution
 
-Q: How do you increase/improve stability?
+- Capturing scenarios
+---
+## Workflow
 
-Q: How to you increase/improve performance?
+- Capturing scenarios
+- Building the abstraction
+- Writing the test
+---
+## Workflow
 
-Q: How to you increase/improve coverage?
+- Capturing scenarios
+- Building the abstraction
+- Writing the test
+- Proving compatibility
+---
+## Workflow
+
+- Capturing scenarios
+- Building the abstraction
+- Writing the test
+- Proving compatibility
+- Proving stability
+---
+## Workflow
+
+- Capturing scenarios
+- Building the abstraction
+- Writing the test
+- Proving compatibility
+- Proving stability
+- Maintaining stability
+---
+## Workflow
+
+- Capturing scenarios
+- Building the abstraction
+- Writing the test
+- Proving compatibility
+- Proving stability
+- Maintaining stability
+- Increasing coverage
+
+---
 ---
 # THE END
 
-### Content that follows is to help with common questions
+### The last slides are just a scratchpad
 
 ---
 ## Design pattern/s
@@ -144,7 +177,7 @@ Q: What about BDD/Tools?
     - KISS, YAGNI
 
 ---
-## Webdriver Overview
+## Webdriver Specific Overview
 
 Selenium webdriver project
  - Spec
