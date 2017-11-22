@@ -29,13 +29,11 @@ All test automation aims to enable change with confidence and speed.
 
 At a system level, we're primarily aiming to cover regression risks introduced to the wider system (specifically at the user/consumer interface) by changes in its subcomponents.
 ---
-
----
----?image=assets/pyramid.png&size=auto
+---?image=assets/pyramid.jpg&size=auto
 ---
 ## Context: Test Pyramid
 
-![Image of test pyramid](https://landing.google.com/sre/book/images/srle-1701.jpg)
+![Image of test pyramid](https://i.imgur.com/ZujCOpW.jpg)
 
 
 Note:
