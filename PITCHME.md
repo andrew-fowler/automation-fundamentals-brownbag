@@ -32,9 +32,8 @@ At a system level, we're primarily aiming to cover regression risks introduced t
 
 ## Context: Test Pyramid
 
-![Image of test pyramid](http://blog.primehammer.com/wp-content/uploads/2017/02/image02-300x259.png)
+![Image of test pyramid](https://landing.google.com/sre/book/images/srle-1701.jpg)
 
-_NOTE TO SELF: Need to find/create a better diagram_
 
 Note:
 The test pyramid is a model often used/abused to describe very different things roughly related to testing.
